@@ -28,6 +28,4 @@ public class RoleDAOImpl implements RoleDAO {
         return (Role) entityManager.createQuery("select r from Role r where r.role= :name")
                 .setParameter("name", name).getSingleResult();
     }
-
-
 }

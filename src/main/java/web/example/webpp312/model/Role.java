@@ -47,12 +47,10 @@ public class Role implements GrantedAuthority {
     @Override
     public String toString() {
         return "Role{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", users=" + users +
+                "name='" + name + '\'' +
                 '}';
     }
-    // implements
+
     @Override
     public String getAuthority() {
         return name;

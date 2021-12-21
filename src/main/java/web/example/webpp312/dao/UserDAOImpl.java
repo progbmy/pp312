@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import web.example.webpp312.model.Role;
 import web.example.webpp312.model.User;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -76,4 +77,5 @@ public class UserDAOImpl implements UserDAO {
             return null;
         }
     }
+
 }
